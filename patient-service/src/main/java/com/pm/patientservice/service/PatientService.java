@@ -23,7 +23,8 @@ public class PatientService {
 
   public PatientService(PatientRepository patientRepository,
       BillingServiceGrpcClient billingServiceGrpcClient,
-      KafkaProducer kafkaProducer) {
+      KafkaProducer kafkaProducer
+      ) {
     this.patientRepository = patientRepository;
     this.billingServiceGrpcClient = billingServiceGrpcClient;
     this.kafkaProducer = kafkaProducer;
